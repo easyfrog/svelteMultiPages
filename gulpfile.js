@@ -50,10 +50,16 @@ gulp.task('removePage', function () {
 	var name = argv.n;
 
 	fs.unlinkSync(`./src/pages/${name}.js`);
-	fs.unlinkSync(`./src/pages/${name}.html`);
+	fs.unlinkSync(`./src/pages/${name}.svelte`);
 	fs.unlinkSync(`./public/${name}.html`);
-	fs.unlinkSync(`./public/js/${name}.js`);
-	fs.unlinkSync(`./public/css/${name}.css`);
+
+	try {
+		fs.unlinkSync(`./public/js/${name}.js`);
+		fs.unlinkSync(`./public/css/${name}.css`);
+	} catch(e) {
+		console.log(e.message);
+	}
+	
 
 })
 
