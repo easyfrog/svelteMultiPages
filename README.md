@@ -11,17 +11,10 @@ The scaffold tool to create multiple svelte pages in frontend
 # in your project folder
 # open terminal
 
-git clone https://github.com/easyfrog/svelteMultiPages.git
+git clone https://github.com/easyfrog/svelteMultiPages.git your-project-name
 
 ```
 
-**use npm **
-
-``` bash
-
-npm i sveltemultipages
-
-```
 
 ## how to use
 
