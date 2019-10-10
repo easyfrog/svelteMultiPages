@@ -1,5 +1,5 @@
 {
-  "name": "svelteMultiPages",
+  "name": "sveltemultipages",
   "version": "1.0.0",
   "devDependencies": {
     "globby": "^10.0.1",

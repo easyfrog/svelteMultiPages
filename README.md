@@ -19,7 +19,7 @@ git clone https://github.com/easyfrog/svelteMultiPages.git
 
 ``` bash
 
-npm i svelteMultiPages
+npm i sveltemultipages
 
 ```
 
