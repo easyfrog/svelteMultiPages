@@ -9,6 +9,18 @@ import path from "path";
 
 const production = !process.env.ROLLUP_WATCH;
 
+//
+// npm run files fs:file1/file2/file3...
+//
+var fs = process.env.fs;
+var files = null;
+
+if (fs) {
+	files = fs.split('/').map(f => {
+		return 'src/pages/' + f + '.js';
+	})
+}
+
 function createConfig(inputFile, name) {
 	return {
 		input: inputFile,
@@ -57,7 +69,11 @@ function createConfig(inputFile, name) {
 /**
  * multiple pages
  */
-var config = globby.sync('src/pages/*.js').map(inputFile => {
+if (!files) {
+	files = globby.sync('src/pages/*.js');
+}
+
+var config = files.map(inputFile => {
 
 	var name = path.basename(inputFile, '.js');
 	return createConfig(inputFile, name);

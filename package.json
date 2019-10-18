@@ -21,6 +21,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "files": "rollup -c --environment",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single",
