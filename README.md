@@ -26,4 +26,7 @@ npm run cp -- -n pageName -t title
 # remove a svelte page
 npm run rp -- -n pageName
 
+# build file indicate
+npm run files fs:fname1/fname2/....
+
 ```
