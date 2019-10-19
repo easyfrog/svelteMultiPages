@@ -38,7 +38,7 @@ npm run cp -- -n pageName -t title
 npm run rp -- -n pageName
 ```
 
-## dev & run
+## dev & build
 
 ```bash 
 # dev & build is same as default svelte script
