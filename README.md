@@ -11,7 +11,7 @@ The template-project for svelte to create multiple pages in one svelte project.
 # in your project folder
 # open terminal
 
-git clone https://github.com/easyfrog/svelteMultiPages.git your-project-name
+npx degit easyfrog/svelteMultiPages your-project-name
 
 cd your-project-name
 
